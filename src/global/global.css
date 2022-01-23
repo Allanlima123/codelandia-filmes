@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Mukta:wght@300;400;500;700&family=Open+Sans:wght@400;500;600;700;800&display=swap');
+
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css");
+
+:root{
+    --color-yellow:#FFA634;
+    --color-white:#F9F9F9;
+    --color-gray-dark:#181818;
+    --color-gray:#A8A8A8;
+    --color-dark:#121214;
+    --color-gradiente-red:#FF267A;
+
+    --font-mukta:"Mukta",sans-serif;
+    --font-open-sans:"Open-Sans",sans-serif;
+}
+
+html{
+    font-size: 62.5%;
+}
