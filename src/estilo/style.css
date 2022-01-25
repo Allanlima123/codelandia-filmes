@@ -203,7 +203,7 @@
 
 .recomendado .filmes .filme .categaria{
     position: absolute;
-    bottom: 4rem;
+    bottom: 2.5rem;
     left: 2rem;
     width: 15rem;
 }
@@ -219,7 +219,7 @@
 }
 
 .recomendado .filmes .filme .categaria .stars{
-    margin: 1.7rem 0;
+    margin: 1.7rem 0 1.5rem 0;
     display: flex;
     align-items: center;
     width: 5rem;
