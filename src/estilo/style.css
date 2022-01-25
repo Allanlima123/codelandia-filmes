@@ -148,8 +148,6 @@
     font-family: var(--font-open-sans);
     color: var(--color-gray-dark);
     cursor: pointer;
-    box-shadow: 0 .5rem 1rem rgba(255,255,255,.3);
-    
 }
 
  .container-box .sobre-filme .btn:hover{
