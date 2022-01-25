@@ -155,13 +155,13 @@
     transform: scale(.9);
 }
 
- .box-container{
+ .recomendado{
     padding: 0 5%;
     max-width: 1440px;
     margin: 0 auto;
 }
 
- .box-container h3{
+ .recomendado h3{
     font-family: var(--font-open-sans);
     font-size: 3.2rem;
     color: var(--color-white);
@@ -170,7 +170,7 @@
     padding-bottom: 4.5rem;
 }
 
- .box-container h3::after{
+ .recomendado h3::after{
     content: "";
     display: block;
     height: .3rem;
@@ -179,36 +179,36 @@
     background: var(--color-yellow);
 }
 
- .box-container .filmes{
+ .recomendado .filmes{
     display: grid;
     grid-template-columns: repeat(auto-fit,minmax(15rem,1fr));
     gap: 2rem;
     margin: 2rem 0;
 }
 
-.box-container .filmes .filme{
+.recomendado .filmes .filme{
     position: relative;
     transition: all .3s ease-in-out;
 }
 
-.box-container .filmes .filme:hover{
+.recomendado .filmes .filme:hover{
     cursor: pointer;
     transform: translateY(-1rem);
 }
 
-.box-container .filmes .filme img{
+.recomendado .filmes .filme img{
     width: 100%;
     opacity: .5;
 }
 
-.box-container .filmes .filme .categaria{
+.recomendado .filmes .filme .categaria{
     position: absolute;
     bottom: 4rem;
     left: 2rem;
     width: 15rem;
 }
 
- .box-container .filmes .filme .categaria span{
+ .recomendado .filmes .filme .categaria span{
     background: var(--color-gray-dark);
     font-size: 14px;
     color: var(--color-yellow);
@@ -218,20 +218,20 @@
     margin-bottom: 20px;
 }
 
-.box-container .filmes .filme .categaria .stars{
+.recomendado .filmes .filme .categaria .stars{
     margin: 1.7rem 0;
     display: flex;
     align-items: center;
     width: 5rem;
 }
 
-.box-container .filmes .filme .categaria .stars i{
+.recomendado .filmes .filme .categaria .stars i{
     color: var(--color-white);
     font-size: 1.5rem;
     margin-right: .8rem;
 }
 
-.box-container .filmes .filme .categaria h4{
+.recomendado .filmes .filme .categaria h4{
     color: var(--color-white);
     font-size: 2.4rem;
     font-family: var(--font-open-sans);
