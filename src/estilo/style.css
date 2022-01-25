@@ -60,7 +60,7 @@
     padding-top: 5rem;
 }
 
-.home .container-box{
+.container-box{
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -70,11 +70,11 @@
     margin: 0 auto;
 }
 
-.home .container-box .sobre-filme{
+ .container-box .sobre-filme{
     max-width: 50rem;
 }
 
-.home .container-box .sobre-filme .descricao{
+ .container-box .sobre-filme .descricao{
     font-family: var(--font-open-sans);
     font-size: 14px;
     color: var(--color-yellow);
@@ -86,30 +86,30 @@
     margin-bottom: 3.5rem;
 }
 
-.home .container-box .sobre-filme .avaliacao{
+ .container-box .sobre-filme .avaliacao{
     display: flex;
     justify-content: space-between;
     align-items: center;
     max-width: 22rem;
 }
 
-.home .container-box .sobre-filme .avaliacao .stars{
+ .container-box .sobre-filme .avaliacao .stars{
     margin: 2.6rem 0;
 }
 
-.home .container-box .sobre-filme .avaliacao .stars i{
+ .container-box .sobre-filme .avaliacao .stars i{
     color: var(--color-yellow);
     font-size: 1.7rem;
     margin: 0 .1rem;
 }
 
-.home .container-box .sobre-filme .avaliacao .duracao .fa-clock{
+ .container-box .sobre-filme .avaliacao .duracao .fa-clock{
     color: var(--color-white);
     font-size: 1.4rem;
     margin-right: .5rem;
 }
 
-.home .container-box .sobre-filme .avaliacao .duracao span{
+ .container-box .sobre-filme .avaliacao .duracao span{
     font-size: 1.4rem;
     font-family: var(--font-open-sans);
     font-weight: 600;
@@ -117,7 +117,7 @@
     color: var(--color-white);
 }
 
-.home .container-box .sobre-filme .title{
+ .container-box .sobre-filme .title{
     font-size: 5.6rem;
     color: var(--color-white);
     font-family: var(--font-open-sans);
@@ -127,7 +127,7 @@
     margin-bottom: 2.6rem;
 }
 
-.home .container-box .sobre-filme p{
+ .container-box .sobre-filme p{
     font-family: var(--font-open-sans);
     font-weight: 400;
     font-style: normal;
@@ -137,7 +137,7 @@
     margin-bottom: 5rem;
 }
 
-.home .container-box .sobre-filme .btn{
+ .container-box .sobre-filme .btn{
     display: inline-block;
     width: 28.6rem;
     height: 5.6rem;
@@ -152,18 +152,18 @@
     
 }
 
-.home .container-box .sobre-filme .btn:hover{
+ .container-box .sobre-filme .btn:hover{
     opacity: .8;
     transform: scale(.9);
 }
 
-.home .box-container{
+ .box-container{
     padding: 0 5%;
     max-width: 1440px;
     margin: 0 auto;
 }
 
-.home .box-container h3{
+ .box-container h3{
     font-family: var(--font-open-sans);
     font-size: 3.2rem;
     color: var(--color-white);
@@ -172,44 +172,73 @@
     padding-bottom: 4.5rem;
 }
 
-.home .box-container h3::after{
+ .box-container h3::after{
     content: "";
     display: block;
-    height: .5rem;
+    height: .3rem;
     width: 6.1rem;
     margin-top: .6rem;
     background: var(--color-yellow);
 }
 
-.home .box-container .filmes{
+ .box-container .filmes{
     display: grid;
     grid-template-columns: repeat(auto-fit,minmax(15rem,1fr));
     gap: 2rem;
     margin: 2rem 0;
 }
 
-.home .box-container .filmes .filme{
+.box-container .filmes .filme{
     position: relative;
+    transition: all .3s ease-in-out;
 }
 
-.home .box-container .filmes .filme img{
+.box-container .filmes .filme:hover{
+    cursor: pointer;
+    transform: translateY(-1rem);
+}
+
+.box-container .filmes .filme img{
     width: 100%;
+    opacity: .5;
 }
 
-.home .box-container .filmes .filme .categaria{
+.box-container .filmes .filme .categaria{
     position: absolute;
     bottom: 4rem;
     left: 2rem;
-    background-color: #fff;
+    width: 15rem;
 }
 
-.home .box-container .filmes .filme .categaria span{
+ .box-container .filmes .filme .categaria span{
     background: var(--color-gray-dark);
     font-size: 14px;
     color: var(--color-yellow);
     font-family: var(--font-open-sans);
-    padding: .5rem 1rem;
+    padding: .4rem .8rem .4rem .8rem;
     border-radius: 0 .8rem;
+    margin-bottom: 20px;
+}
+
+.box-container .filmes .filme .categaria .stars{
+    margin: 1.7rem 0;
+    display: flex;
+    align-items: center;
+    width: 5rem;
+}
+
+.box-container .filmes .filme .categaria .stars i{
+    color: var(--color-white);
+    font-size: 1.5rem;
+    margin-right: .8rem;
+}
+
+.box-container .filmes .filme .categaria h4{
+    color: var(--color-white);
+    font-size: 2.4rem;
+    font-family: var(--font-open-sans);
+    font-weight: 600;
+    font-style: normal;
 }
 
 .rodape .icones{
@@ -315,5 +344,10 @@
     
     .header .max-width .navbar ul li i{
         font-size: 1.8rem;
+    }
+
+    .rodape .icones nav ul li{
+        margin: 0 1rem;
+        font-size: 2.5rem;
     }
 }
